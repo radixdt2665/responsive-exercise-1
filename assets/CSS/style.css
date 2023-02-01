@@ -51,7 +51,9 @@ img{height: auto;max-width: 100%;object-fit: cover;}
 .nav-main .search-div .s-icon{position: absolute;right: 15px;top: 50%;transform: translateY(-50%);color: #B6B6B6;}
 .nav-main .search-input{padding: 15px 35px 15px 15px;max-width: 520px;border-radius: 25px;border: 1px solid #B6B6B6;}
 .nav-main .search-input::placeholder{color: #9B9B9B;}
-.nav-main .menu-icon{display: none;}
+.nav-main .menu-btn{display: none;}
+.nav-main .social-div-flex,
+.nav-main .book-now-link{display: none;}
 
 
 .main-section{padding-top: 80px;padding-bottom: 80px;background-color: #EAEAEA;margin-bottom: 50px;}
@@ -106,8 +108,14 @@ img{height: auto;max-width: 100%;object-fit: cover;}
     .container{padding-left: 20px;padding-right: 20px;}
 
     /* nav-main css start */
-    .nav-main .nav-link{display: none;}
-    .nav-main .menu-icon{display: block;}
+    .nav-main .nav-link-collect{display: none;}
+    .nav-main .nav-link-collect.show{display: block;position: absolute;width: 100%;top: 0;background: white;left: 0;height: 100vh;z-index: 99;}
+    .nav-main .nav-link-collect.show .nav-link{display: block;padding: 25px 0;text-align: center;margin: 0;}
+    .nav-main .book-now-link{font-size: 16px;line-height: 18px;background-color: #000000;padding: 18px 32px;display: inline-block;}
+    .nav-main .social-div-flex,
+    .nav-main .book-now-link{display: block;}
+    .nav-main .menu-btn{display: block;}
+
 
     /* nav-main css end */
 
@@ -131,7 +139,7 @@ img{height: auto;max-width: 100%;object-fit: cover;}
     .font-32{font-size: 24px;}
     
     /* nav-main css start */
-    .nav-main .menu-icon{margin-left: 15px;}
+    .nav-main .menu-btn{margin-left: 20px;background-color: transparent;border: 0;}
     .nav-main-flex .header-logo{max-width: 114px;}
     .nav-main .search-input{max-width: 127px;}
     /* nav-main css end */

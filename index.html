@@ -15,18 +15,28 @@
                 <a href="#" title="home" class="header-logo">
                     <img src="./assets/images/logo.png" width="202" height="54" alt="Header Logo">
                 </a>
-                <a href="#" title="home" class="ml-4 nav-link font-20 active">Home</a>
-                <a href="#" title="Html" class="ml-4 nav-link font-20">Html</a>
-                <a href="#" title="CSS" class="ml-4 nav-link font-20">CSS</a>
-                <a href="#" title="Layout" class="ml-4 nav-link font-20">Layout</a>
-                <a href="#" title="Bootstrap" class="ml-4 nav-link font-20">Bootstrap</a>
+                <div class="nav-link-collect">
+                    <a href="#" title="home" class="ml-4 nav-link font-20 active">Home</a>
+                    <a href="#" title="Html" class="ml-4 nav-link font-20">Html</a>
+                    <a href="#" title="CSS" class="ml-4 nav-link font-20">CSS</a>
+                    <a href="#" title="Layout" class="ml-4 nav-link font-20">Layout</a>
+                    <a href="#" title="Bootstrap" class="ml-4 nav-link font-20">Bootstrap</a>
+
+                    <a href="#" class="book-now-link">Book Now</a>
+
+                    <div class="d-flex justify-content-center social-div-flex">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                    </div>
+                </div>
                 <div class="search-div ml-auto">
                     <input type="text" class="search-input" placeholder="Enter keyword, Item # or Part #" >
                     <i class="fa-solid fa-magnifying-glass s-icon"></i>
                 </div>
-                <div class="menu-icon">
+                <button class="menu-btn">
                     <i class="fa-solid fa-bars"></i>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
@@ -315,5 +325,11 @@
         </div>
     </footer>
    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(".menu-btn").click(function(){
+            $(".nav-link-collect").addClass("show")
+        })
+    </script>
 </body>
 </html>
